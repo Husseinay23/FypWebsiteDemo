@@ -4,6 +4,9 @@ __pycache__/
 *$py.class
 *.so
 .Python
+env/
+venv/
+ENV/
 build/
 develop-eggs/
 dist/
@@ -19,10 +22,6 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-venv/
-env/
-ENV/
-.venv
 
 # Node
 node_modules/
@@ -30,9 +29,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
-dist/
-dist-ssr/
-*.local
 
 # IDEs
 .vscode/
@@ -40,30 +36,24 @@ dist-ssr/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
-Thumbs.db
-
-# Logs
-logs/*.jsonl
-logs/*.csv
-*.log
 
 # Environment
 .env
 .env.local
-.env.production
 
-# Model checkpoints (optional - uncomment if you don't want to track models)
-# models/**/*.pt
+# Logs
+logs/
+*.log
+*.jsonl
 
-# Frontend build
-frontend/dist/
-frontend/.vite/
+# Test audio
+test_audio/
+*.wav
 
-# Testing
-.pytest_cache/
-.coverage
-htmlcov/
+# Models
+models/
 
+# Temporary files
+*.tmp
+*.temp
